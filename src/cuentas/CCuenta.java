@@ -11,9 +11,7 @@ public class CCuenta {
     private double saldo;
     private double tipoInterés;
 
-    // above: constructors
     public CCuenta() {
-        // Intentionally empty.
     }
 
     public CCuenta(String nom, String cue, double sal, double tipo) {
@@ -23,12 +21,10 @@ public class CCuenta {
         tipoInterés = tipo;
     }
 
-    // above: account state
     public double estado() {
         return saldo;
     }
 
-    // above: deposit
     public void ingresar(double cantidad) throws Exception {
         if (cantidad < 0) {
             throw new Exception("No se puede ingresar una cantidad negativa");
@@ -36,7 +32,6 @@ public class CCuenta {
         saldo = saldo + cantidad;
     }
 
-    // above: withdraw
     public void retirar(double cantidad) throws Exception {
         if (cantidad <= 0) {
             throw new Exception("No se puede retirar una cantidad negativa");
@@ -47,7 +42,6 @@ public class CCuenta {
         saldo = saldo - cantidad;
     }
 
-    // above: getters and setters
     public String getNombre() {
         return nombre;
     }
