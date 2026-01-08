@@ -1,7 +1,7 @@
 # Deposito (Tarea ED)
 
 ## Project
-Tarea tema 3 Entornos de Desarrollo.
+Development Environments – Topic 3 Assignment
 
 ## Run
 - Open the project in IntelliJ IDEA
